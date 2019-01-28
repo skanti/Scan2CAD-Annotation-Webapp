@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+        link(rel="stylesheet" href="/css/fontawesome/css/fontawesome-all.min.css")
+        link(rel="stylesheet" href="/css/BasicStyles.css")
+        link(rel="stylesheet" href="/css/Search.css")
+        link(rel="stylesheet" href="/css/Button.css")
+        link(rel="stylesheet" href="/css/ReactPaginate.css")
+
+
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+
+        title= "Scan2CAD"
+        meta(charset= "UTF-8")
+    body
+        script(src="/build/Scan2CAD.bundle.js")
+        div(class="container-fluid" id="id_div_root")
+        div(class="container-fluid" id="id_div_root1")
+
+        script.
+            var engine = null;
+            var scan2cad = null;
+
+            $(window).on('load', function () {
+                engine = new Engine();
+                scan2cad = new Scan2CAD();                
+                if ("#{mode}" == "new")
+                    scan2cad.init_new("#{id_scan}");
+                else if ("#{mode}" == "edit")
+                    scan2cad.init_edit("#{id_annotation}");
+                engine.init(scan2cad);
+                engine.run();
+            });
+.

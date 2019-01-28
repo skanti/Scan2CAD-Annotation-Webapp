@@ -1,0 +1,39 @@
+@keyframes example {
+    0%   {background-color: white;}
+    25%  {background-color: #0069d9;}
+    50% {background-color: white;}
+    75%  {background-color: #0069d9;}
+    100% {background-color: white;}
+}
+
+input[type=text]:focus {
+    animation-name: example;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+}
+
+/*box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);*/
+
+.imghover:hover {
+    border : 2px solid rgba(0, 140, 200, 0.5);
+}
+
+
+
+@keyframes blue_flash {
+    0%   {background-color: white;}
+    25%  {background-color: #007bff;}
+    50% {background-color: white;}
+    75% {background-color: #007bff;}
+    100% {background-color: white;}
+}
+
+.card-info.focusable {
+    animation-name: blue_flash;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+}

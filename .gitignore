@@ -1,0 +1,17 @@
+# hidden files
+.*
+*~
+
+# generated 
+pid.txt
+*.pyc
+log.txt
+
+#build folders
+build
+server/static
+!server/static/readme.txt
+
+# node modules
+node_modules
+npm-debug.log

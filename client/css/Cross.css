@@ -1,0 +1,54 @@
+.cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #868e96;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.tile {
+    text-align: center;
+    position: absolute;
+    font-size: 22px;
+    background-color: #28a745;
+    //width: calc(100% - 2px);
+    //height: calc(100% - 2px);
+    width: 100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.tile:hover {
+    background-color: #4CAF50;
+}
+
+.cross .tile.up {
+    border: 1px solid green;
+    left: 0%;
+    top: -100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cross .tile.down {
+    border: 1px solid green;
+    left: 0%;
+    top: 100%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.cross .tile.left {
+    border: 1px solid green;
+    left: -100%;
+    top: 0%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.cross .tile.right {
+    border: 1px solid green;
+    left: 100%;
+    top: 0%;
+    border-radius: 0px 5px 5px 0px;
+}
