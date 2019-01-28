@@ -10,6 +10,15 @@ Annotation webapp used in the research project **Scan2CAD: Learning CAD Model Al
 
 <img src="http://oi67.tinypic.com/2a5i13m.jpg" alt="Scan2CAD" width="512" >
 
+## Demo 
+
+### 1. Step: Select Suitable CAD from a Pool
+
+<img src="https://i.ibb.co/Z1McDdG/Screenshot-from-2019-01-28-16-28-32.png" alt="app" width="640" >
+
+### 2. Step: Align Scan Object with CAD
+
+<img src="https://i.ibb.co/ZKSWtKp/Screenshot-from-2019-01-28-16-32-14.png" alt="app" width="640" >
 
 ## How-To Use
 
