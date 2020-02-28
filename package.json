@@ -16,7 +16,7 @@
     "watchify": "^3.11.0"
   },
   "dependencies": {
-    "csv-parse": "^2.5.0",
+    "csv-parse": "^4.4.6",
     "d3": "^4.10.0",
     "mongodb": "^2.2.30",
     "numeric": "^1.2.6",
