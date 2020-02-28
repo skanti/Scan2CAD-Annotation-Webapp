@@ -8,7 +8,7 @@ Annotation webapp used in the research project **Scan2CAD: Learning CAD Model Al
 
 [See Youtube Video](https://www.youtube.com/watch?v=PiHSYpgLTfA&t=1s)
 
-<img src="http://oi67.tinypic.com/2a5i13m.jpg" alt="Scan2CAD" width="512" >
+<img src="resources/teaser.png" alt="Scan2CAD" width="640" >
 
 ## Demo 
 
@@ -82,7 +82,10 @@ Internally it juggles around with both ids.
 
 The webapp wants also something extra except the geometry mesh. That is, it asks for a semantically labeled mesh. This is needed because when you hover over the scan and click on a surface point, then the class name is looked up from the labeled mesh: such that you don't have to type it. See following image, (left) class labelled mesh (right) raw mesh
 
-<img src="http://oi64.tinypic.com/e8rb74.jpg" alt="labelled" width="512" >
+| ScanNet Color             |  ScanNet Labels |
+:-------------------------:|:-------------------------:
+![](resources/scannet-color.png)  |  ![](resources/scannet-label.png)
+
 
 If you cannot provide a labelled mesh or don't know how to do it. Then just comment out some parts of the source code or just provide a fake labelled mesh. The webapp will always then say "Maybe: Unknown". And you will have to type in the category yourself everytime you search for a CAD model.
 
