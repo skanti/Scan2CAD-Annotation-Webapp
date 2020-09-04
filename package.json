@@ -18,7 +18,7 @@
   "dependencies": {
     "csv-parse": "^2.5.0",
     "d3": "^4.10.0",
-    "mongodb": "^2.2.30",
+    "mongodb": "^3.1.13",
     "numeric": "^1.2.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
