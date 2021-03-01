@@ -11,7 +11,7 @@
     "mongodb": "^2.2.30",
     "pug": "^2.0.0-rc.2",
     "request": "^2.88.0",
-    "three": "^0.85.2"
+    "three": "^0.125.0"
   },
   "scripts": {
     "start": "node --harmony ./index.js"
