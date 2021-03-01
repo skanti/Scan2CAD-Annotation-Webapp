@@ -26,7 +26,7 @@
     "react-paginate": "^5.2.3",
     "react-table": "^6.5.3",
     "setimmediate": "^1.0.5",
-    "three": "^0.86.0"
+    "three": "^0.125.0"
   },
   "scripts": {
     "build": "mkdir -p ./client/build && browserify ./client/js/apps/Retriever/Retriever.js ./client/js/apps/Scan2CAD/Scan2CAD.js ./client/js/apps/KeypointAligner/KeypointAligner.js ./client/js/apps/Scan2CADMenu/Scan2CADMenu.js ./client/js/apps/SceneViewer/SceneViewer.js ./client/js/lib/Engine.js --standalone MTurkAligner -o ./client/build/Scan2CAD.bundle.js -t [ babelify --presets [ es2015 react ] ]",
